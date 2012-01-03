@@ -1,9 +1,6 @@
 <?php
-class EventsController extends AppController {
-	
-	public $uses = array('Event', 'Guest');
-
-	
+class EventsController extends AppController
+{
 	public function index()
 	{
 		

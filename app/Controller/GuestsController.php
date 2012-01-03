@@ -1,9 +1,6 @@
 <?php
 class GuestsController extends AppController {
 	
-	public $uses = array('Event', 'Guest');
-
-	
 	public function confirm($guest_id)
 	{
 		$this->Guest->updateAll(
