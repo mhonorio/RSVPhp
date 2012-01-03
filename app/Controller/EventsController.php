@@ -1,9 +1,30 @@
 <?php
 class EventsController extends AppController {
+	
+	public $uses = array('Event', 'Guest');
 
 	
 	public function index()
 	{
 		
+	}
+	
+	public function search()
+	{
+		$data = $this->request->data;
+		
+		$guest = $this->Guest->find('first', array(
+			'conditions' => array(
+				'first_name' => $data['Event']['first_name'],
+				'last_name' => $data['Event']['last_name'],
+			)
+		));
+		
+		if(!$guest) {
+			$event = $this->Event->find('first');
+			$this->set(compact('event'));
+		}
+		
+		$this->set(compact('guest'));
 	}
 }
