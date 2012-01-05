@@ -6,5 +6,8 @@ class Event extends AppModel
 	
 	public $hasMany = array('Guest');
 	
-	public $virtualFields = array('dateF' => "DATE_FORMAT(date, '%d/%m/%Y às %H:%i')");
+	public $virtualFields = array(
+		'dateF' => "DATE_FORMAT(date, '%d/%m/%Y às %H:%i')",
+		'days' => 'DATEDIFF(date, NOW())'
+	);
 }

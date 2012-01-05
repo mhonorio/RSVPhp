@@ -3,7 +3,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $event['Event']['name']; ?>
+		<?php echo $event['Event']['name']; ?> - Faltam <?php echo $event['Event']['days']; ?> dias!
 	</title>
 	<?php
 		echo $this->Html->css('cake.generic');
@@ -14,7 +14,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><a href="/"><?php echo $event['Event']['name']; ?></a></h1>
+			<h1><a href="/"><?php echo $event['Event']['name']; ?></a> - Faltam <?php echo $event['Event']['days']; ?> dias!</h1>
 		</div>
 		<div id="content">
 
