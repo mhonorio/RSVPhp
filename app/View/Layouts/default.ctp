@@ -6,27 +6,59 @@
 		<?php echo $event['Event']['name']; ?> - Faltam <?php echo $event['Event']['days']; ?> dias!
 	</title>
 	<?php
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('style');
 
 		echo $scripts_for_layout;
-	?>
+
+                ?>
+
+    <link href='http://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'></link>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><a href="/"><?php echo $event['Event']['name']; ?></a> - Faltam <?php echo $event['Event']['days']; ?> dias!</h1>
-		</div>
-		<div id="content">
+<div id="container_all">
+	<div id="content_box">
+		<div class="tWidth">
+			<div id="header">
+				<div class="left">
+					<h1><a href="/"><img alt="logotype" src="/img/logotype.png" /><?php echo $event['Event']['name']; ?></a></h1>
+				</div>
+				<!--<div class="menu">
+					<ul>
+						<li><a class="active" href="index.html">home</a></li>
+						<li><a href="index-1.html">about</a></li>
+						<li><a href="index-2.html">photo services</a></li>
+					</ul>
+				</div>-->
+				<div class="clear"></div>
+			</div>
+			<div id="content"><div class="indent">
 
-			<?php echo $this->Session->flash(); ?>
+				<?php echo $this->Session->flash(); ?>
 
-			<?php echo $content_for_layout; ?>
-
-		</div>
-		<div id="footer">
-			
+                                <?php echo $content_for_layout; ?>
+			</div></div>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<div id="footer">
+		<div class="tWidth">
+		Copyright &copy; 2010, <a href="#">Wedding Photography</a>
+        <br >
+      <a href="http://photochopia.com">Free Photo Editing</a></div>
+  </div>
+</div>
+<script type="text/javascript">
+addHeight = function(){
+	needHeight = document.getElementById('container_all').offsetHeight - document.getElementById('footer').offsetHeight;
+	if ( document.getElementById('content_box').offsetHeight < needHeight){ document.getElementById('content_box').style.height = needHeight+'px'; }
+}
+window.onresize = function() {
+	document.getElementById('content_box').style.height = 'auto';
+	addHeight();
+}
+addHeight();
+</script>
+
+<?php echo $this->element('sql_dump'); ?>
+
 </body>
 </html>

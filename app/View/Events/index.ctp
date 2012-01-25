@@ -1,3 +1,10 @@
+<h2>Faltam <?php echo $event['Event']['days']; ?> dias!</h2>
+
+<br /><br />
+
+<h3>Para confirmar sua presença em nosso casamento, digite os dados abaixo.</h3>
+
+<br /><br /><br />
 <?php
 
 echo $this->Form->create('Event', array(
