@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.18, for osx10.5 (i386)
+-- MySQL dump 10.13  Distrib 5.1.54, for debian-linux-gnu (i686)
 --
 -- Host: localhost    Database: rsvphp
 -- ------------------------------------------------------
--- Server version	5.5.18
+-- Server version	5.1.54-1ubuntu4
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -50,7 +50,7 @@ CREATE TABLE `events` (
 
 LOCK TABLES `events` WRITE;
 /*!40000 ALTER TABLE `events` DISABLE KEYS */;
-INSERT INTO `events` VALUES (1,'Casamento','Rafaela Pezuti & Marcelo Honório','2012-05-12 17:30:00','Igreja Santa Teresinha de Santana',NULL,'11-1234-5678',NULL,NULL);
+INSERT INTO `events` VALUES (1,'Casamento de Rafaela Pezuti & Marcelo Honório','Rafaela Pezuti & Marcelo Honório','2012-05-12 17:30:00','Igreja Santa Teresinha de Santana',NULL,'11-8181-4868',NULL,NULL);
 /*!40000 ALTER TABLE `events` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,7 +71,7 @@ CREATE TABLE `guests` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -80,7 +80,6 @@ CREATE TABLE `guests` (
 
 LOCK TABLES `guests` WRITE;
 /*!40000 ALTER TABLE `guests` DISABLE KEYS */;
-INSERT INTO `guests` VALUES (1,1,'Aaa','Bbb',2,1,'2012-01-03 10:32:21','2012-01-03 10:54:32');
 /*!40000 ALTER TABLE `guests` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -93,4 +92,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-01-03 11:12:29
+-- Dump completed on 2012-01-25 20:20:35

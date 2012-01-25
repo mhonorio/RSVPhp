@@ -37,3 +37,7 @@ h1 img { vertical-align:top; }
 .img_tl { float:left; margin:0 15px 10px 0; }
 h4 { font-family:"Bickham Script Pro Regular", "Palatino Linotype", "Book Antiqua", Palatino, serif; font-size:18px; }
 #content .inner_copy {border:0;color:#f00;float:left;width:50%!important;margin:-202px 0 0 0;overflow:hidden;line-height:0;padding:0;font-size:12px}
+
+.submit{
+    padding-top: 20px;
+}
