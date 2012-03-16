@@ -1,5 +1,16 @@
 <?php
 class StatsController extends AppController {
+	public $components = array(
+		'Session',
+			'Auth' => array(
+				'loginRedirect' => array('controller' => 'stats', 'action' => 'index'),
+				'logoutRedirect' => array('controller' => 'users', 'action' => 'login')
+			)
+		);
+
+	public function beforeFilter() {
+		$this->Auth->allow('index', 'view');
+	}
 	
 	public function index()
 	{
@@ -41,5 +52,4 @@ class StatsController extends AppController {
 		
 		$this->set(compact('guests', 'event', 'total_confirmed', 'total_unconfirmed'));
 	}
-	
 }
