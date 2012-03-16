@@ -1,6 +1,11 @@
 <?php
 class EventsController extends AppController
 {
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('index','search');
+	}
+	
 	public function index()
 	{
 		

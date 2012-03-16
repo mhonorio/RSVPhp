@@ -1,17 +1,5 @@
 <?php
 class StatsController extends AppController {
-	public $components = array(
-		'Session',
-			'Auth' => array(
-				'loginRedirect' => array('controller' => 'stats', 'action' => 'index'),
-				'logoutRedirect' => array('controller' => 'users', 'action' => 'login')
-			)
-		);
-
-	public function beforeFilter() {
-		$this->Auth->allow('index', 'view');
-	}
-	
 	public function index()
 	{
 
@@ -47,9 +35,9 @@ class StatsController extends AppController {
 			'conditions' => array('confirmed' => false),
 			'recursive' => -1
 		));
-		
+
 		$total_unconfirmed = $total_guests_unconfirmed + $total_guests_companions[0][0]['total_companions'];
-		
+
 		$this->set(compact('guests', 'event', 'total_confirmed', 'total_unconfirmed'));
 	}
 }
