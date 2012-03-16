@@ -50,7 +50,7 @@ CREATE TABLE `events` (
 
 LOCK TABLES `events` WRITE;
 /*!40000 ALTER TABLE `events` DISABLE KEYS */;
-INSERT INTO `events` VALUES (1,'Casamento de Rafaela Pezuti & Marcelo Furusawa Honório','Rafaela Pezuti & Marcelo Furusawa Honório','2012-05-12 17:30:00','Igreja Santa Teresinha de Santana',NULL,'11-1234-5678',NULL,NULL);
+INSERT INTO `events` VALUES (1,'Casamento de Rafaela Pezuti & Marcelo Furusawa Honório','Rafaela Pezuti & Marcelo Furusawa Honório','2012-05-12 17:30:00','Igreja Santa Teresinha de Santana',NULL,'11-8181-4868',NULL,NULL);
 /*!40000 ALTER TABLE `events` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -66,6 +66,7 @@ CREATE TABLE `guests` (
   `event_id` int(11) DEFAULT NULL,
   `first_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
+  `hash` char(32) DEFAULT NULL,
   `companions` tinyint(3) DEFAULT NULL,
   `confirmed` tinyint(1) DEFAULT '0',
   `created` datetime DEFAULT NULL,
@@ -80,7 +81,7 @@ CREATE TABLE `guests` (
 
 LOCK TABLES `guests` WRITE;
 /*!40000 ALTER TABLE `guests` DISABLE KEYS */;
-INSERT INTO `guests` VALUES (1,1,'Aaa','Bbb',2,1,'2012-01-04 09:44:40','2012-01-04 10:03:59'),(2,1,'Ccc','Ddd',4,1,'2012-01-04 09:44:40','2012-01-04 10:05:33');
+INSERT INTO `guests` VALUES (1,1,'Aaa','Bbb','855697e76533fe97caab0fa3742acbab',2,0,'2012-01-04 09:44:40','0000-00-00 00:00:00'),(2,1,'Ccc','Ddd','23e37967b44586cd1aab78cf25e721f7',4,0,'2012-01-04 09:44:40','0000-00-00 00:00:00');
 /*!40000 ALTER TABLE `guests` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -93,4 +94,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-01-26  8:03:39
+-- Dump completed on 2012-03-16  8:10:14
