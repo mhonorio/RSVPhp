@@ -41,9 +41,7 @@
 	</div>
 	<div id="footer">
 		<div class="tWidth">
-		Copyright &copy; 2010, <a href="#">Wedding Photography</a>
-        <br >
-      <a href="http://photochopia.com">Free Photo Editing</a></div>
+		</div>
   </div>
 </div>
 <script type="text/javascript">

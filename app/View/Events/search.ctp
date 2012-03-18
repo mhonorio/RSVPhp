@@ -30,7 +30,7 @@
 	<?php
 	echo $this->Html->link(
 		'Sim',
-		array('controller' => 'guests', 'action' => 'confirm', $guest['Guest']['id']),
+		array('controller' => 'guests', 'action' => 'confirm', $guest['Guest']['hash']),
 		array(),
 		"Deseja realmente confirmar?"
 	);
@@ -42,7 +42,7 @@
 	</p>
 <?php } else { ?>
 	
-	<p>Você já confirmou sua participação!</p>
+	<p>Você já confirmou sua presença!</p>
 	
 	Beijos,<br />
 	<b><?php echo $guest['Event']['organizers']; ?></b>
