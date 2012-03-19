@@ -72,7 +72,7 @@ CREATE TABLE `guests` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=104 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -81,8 +81,36 @@ CREATE TABLE `guests` (
 
 LOCK TABLES `guests` WRITE;
 /*!40000 ALTER TABLE `guests` DISABLE KEYS */;
-INSERT INTO `guests` VALUES (1,1,'Aaa','Bbb','855697e76533fe97caab0fa3742acbab',2,0,'2012-01-04 09:44:40','0000-00-00 00:00:00'),(2,1,'Ccc','Ddd','23e37967b44586cd1aab78cf25e721f7',4,0,'2012-01-04 09:44:40','0000-00-00 00:00:00');
+INSERT INTO `guests` VALUES (1,1,'Carlos Eduardo','Teste Like','9df859b66a5450ff2adea0fc41d7c220',1,0,'2012-03-16 08:27:49','2012-03-16 08:27:49'),(2,1,'Marcio','Seiji','494bcf62824361d4ce9ecd8a666d8c68',1,0,'2012-03-16 08:27:49','2012-03-16 08:27:49');
 /*!40000 ALTER TABLE `guests` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `role` varchar(20) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (3,'seiji','85e3c1304d3818246ae54807132133417f94a188','admin','2012-03-16 07:50:59','2012-03-16 07:50:59'),(4,'marcelo','ca02885254145bdbfee67f0b87a10f3f97383ec0','admin','2012-03-16 10:23:49','2012-03-16 10:23:49');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -94,4 +122,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-03-16  8:10:14
+-- Dump completed on 2012-03-19 18:20:36
