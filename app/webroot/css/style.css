@@ -1,4 +1,26 @@
 @charset "utf-8";
+
+label {
+	float: left;
+	width: 120px;
+	font-weight: bold;
+}
+
+input {
+	width: 180px;
+	margin-bottom: 5px;
+}
+
+.submit {
+	margin-left: 120px;
+	margin-top: 5px;
+	width: 90px;
+}
+
+br {
+	clear: left;
+}
+
 /* CSS Document */
 * { padding:0; margin:0; }
 a { color:inherit;}
