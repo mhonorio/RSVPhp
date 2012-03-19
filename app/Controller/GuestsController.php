@@ -1,7 +1,12 @@
 <?php
 class GuestsController extends AppController {
 	
-	public function confirm($guest_id)
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('confirm');
+	}
+	
+	public function confirm($hash)
 	{
 		$this->Guest->updateAll(
 			array(
@@ -9,7 +14,7 @@ class GuestsController extends AppController {
 				'Guest.modified' => 'NOW()'
 			),
 			array(
-				'Guest.id' => $guest_id
+				'Guest.hash' => $hash
 			)
 		);
 		
