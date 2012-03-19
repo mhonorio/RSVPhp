@@ -6,22 +6,22 @@ class EventsController extends AppController
 		$this->Auth->allow('index','search');
 	}
 	
-	public function index()
-	{
-		
-	}
+	public function index() {}
 	
 	public function search()
 	{
 		$data = $this->request->data;
-		
+
+		$firstname = $data['Event']['first_name'];
+		$lastname = $data['Event']['last_name'];
+
 		$guest = $this->Guest->find('first', array(
 			'conditions' => array(
-				'first_name' => $data['Event']['first_name'],
-				'last_name' => $data['Event']['last_name'],
+				'Guest.first_name LIKE' => "%$firstname%",
+				'Guest.last_name LIKE' => "%$lastname%",
 			)
 		));
-		
+
 		if(!$guest) {
 			$event = $this->Event->find('first');
 			$this->set(compact('event'));
