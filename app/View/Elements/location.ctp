@@ -1,0 +1,6 @@
+<p><b>Igreja Santa Teresinha de Santana</b></p>
+<p>Praça Domingos Correia da Cruz, 140 - Santana</p>
+
+<br /><br />
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=Pra%C3%A7a+Domingos+Correia+da+Cruz,+140+-+Santana,+S%C3%A3o+Paulo+-+S%C3%A3o+Paulo&amp;aq=&amp;sll=-23.491333,-46.633498&amp;sspn=0.007468,0.013915&amp;t=h&amp;g=Pra%C3%A7a+Domingos+Correia+da+Cruz+-+Santana,+S%C3%A3o+Paulo+-+S%C3%A3o+Paulo&amp;ie=UTF8&amp;hq=&amp;hnear=Pra%C3%A7a+Domingos+Correia+da+Cruz,+140+-+Santana,+S%C3%A3o+Paulo,+02405-060&amp;ll=-23.491332,-46.633497&amp;spn=0.003734,0.006958&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=Pra%C3%A7a+Domingos+Correia+da+Cruz,+140+-+Santana,+S%C3%A3o+Paulo+-+S%C3%A3o+Paulo&amp;aq=&amp;sll=-23.491333,-46.633498&amp;sspn=0.007468,0.013915&amp;t=h&amp;g=Pra%C3%A7a+Domingos+Correia+da+Cruz+-+Santana,+S%C3%A3o+Paulo+-+S%C3%A3o+Paulo&amp;ie=UTF8&amp;hq=&amp;hnear=Pra%C3%A7a+Domingos+Correia+da+Cruz,+140+-+Santana,+S%C3%A3o+Paulo,+02405-060&amp;ll=-23.491332,-46.633497&amp;spn=0.003734,0.006958&amp;z=14" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>

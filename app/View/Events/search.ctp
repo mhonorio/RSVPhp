@@ -13,6 +13,7 @@
 
 <p>Olá <b><?php echo $guest['Guest']['first_name']; ?> <?php echo $guest['Guest']['last_name']; ?></b>,</p>
 
+<br /><br />
 
 <?php if(!$guest['Guest']['confirmed']) { ?>
 
@@ -25,19 +26,23 @@
 	ao <b><?php echo $guest['Event']['name']; ?></b>
 
 	na <b><?php echo $guest['Event']['location']; ?></b> no dia <b><?php echo $guest['Event']['dateF']; ?></b>
-
-	<p>
+	
+	<br /><br />
+	
+	<p style="font-size: 20px;">
 	<?php
 	echo $this->Html->link(
 		'Sim',
 		array('controller' => 'guests', 'action' => 'confirm', $guest['Guest']['hash']),
 		array(),
-		"Deseja realmente confirmar?"
+		"Deseja realmente confirmar a presença?"
 	);
 	?>
 	</p>
-
-	<p>
+	
+	<br /><br />
+	
+	<p style="font-size: 15px;">
 		<a href="/">Não</a>
 	</p>
 <?php } else { ?>
@@ -46,6 +51,10 @@
 	
 	Beijos,<br />
 	<b><?php echo $guest['Event']['organizers']; ?></b>
+	
+	<br /><br /><br />
+	
+	<?php echo $this->element('location'); ?>
 	
 <?php 
 	}

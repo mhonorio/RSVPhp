@@ -12,13 +12,13 @@ class EventsController extends AppController
 	{
 		$data = $this->request->data;
 
-		$firstname = $data['Event']['first_name'];
-		$lastname = $data['Event']['last_name'];
+		$firstname = str_replace(' ', '%', $data['Event']['first_name']);
+		$lastname = str_replace(' ', '%', $data['Event']['last_name']);
 
 		$guest = $this->Guest->find('first', array(
 			'conditions' => array(
-				'Guest.first_name LIKE' => "%$firstname%",
-				'Guest.last_name LIKE' => "%$lastname%",
+				'Guest.first_name LIKE' => "%{$firstname}%",
+				'Guest.last_name LIKE' => "%{$lastname}%",
 			)
 		));
 
