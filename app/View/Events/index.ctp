@@ -32,4 +32,4 @@ echo $this->Form->input('last_name', array(
 	'class' => 'required'
 ));
 
-echo $this->Form->end(array('Próximo'));
+echo $this->Form->end('Próximo');
