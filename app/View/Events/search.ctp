@@ -2,32 +2,36 @@
 
 <?php if(!$guest) { ?>
 
-<p>Desculpe, não foi possível localizar seu nome.</p>
+<h3>
+	<p>Desculpe, não foi possível localizar seu nome.</p>
 
-<p>Caso esteja tendo problemas, favor ligar para <?php echo $event['Event']['phone_number']; ?></p>
-
-<p><a href="/">Tentar novamente</a></p>
+	<p>Caso esteja tendo problemas, favor ligar para <?php echo $event['Event']['phone_number']; ?></p>
+	<br /><br />
+	<p><a href="/">Tentar novamente</a></p>
+</h3>
 
 <?php } else { ?>
 
 
-<p>Olá <b><?php echo $guest['Guest']['first_name']; ?> <?php echo $guest['Guest']['last_name']; ?></b>,</p>
+<h1><p>Olá <b><?php echo $guest['Guest']['first_name']; ?> <?php echo $guest['Guest']['last_name']; ?></b>,</p></h1>
 
 <br /><br />
 
 <?php if(!$guest['Guest']['confirmed']) { ?>
 
-	<p>Deseja confirmar sua ida
+	<h3>
+		<p>Deseja confirmar sua ida
 
-	<?php if($guest['Guest']['companions'] > 0) { ?>
-		e de mais <b><?php echo $guest['Guest']['companions']; ?></b> familiar(es) 
-	<?php } ?>
+		<?php if($guest['Guest']['companions'] > 0) { ?>
+			e de mais <b><?php echo $guest['Guest']['companions']; ?></b> familiar(es) 
+		<?php } ?>
 
-	ao <b><?php echo $guest['Event']['name']; ?></b>
+		ao <b><?php echo $guest['Event']['name']; ?></b>
 
-	na <b><?php echo $guest['Event']['location']; ?></b> no dia <b><?php echo $guest['Event']['dateF']; ?></b>
+		na <b><?php echo $guest['Event']['location']; ?></b> no dia <b><?php echo $guest['Event']['dateF']; ?></b>
 	
-	<br /><br />
+		<br /><br />
+	</h3>
 	
 	<p style="font-size: 20px;">
 	<?php
@@ -47,10 +51,12 @@
 	</p>
 <?php } else { ?>
 	
-	<p>Você já confirmou sua presença!</p>
-	
-	Beijos,<br />
-	<b><?php echo $guest['Event']['organizers']; ?></b>
+	<h3>
+		<p>Você já confirmou sua presença!</p>
+		
+		Beijos,<br />
+		<b><?php echo $guest['Event']['organizers']; ?></b>
+	</h3>
 	
 	<br /><br /><br />
 	
