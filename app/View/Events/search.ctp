@@ -20,7 +20,7 @@
 	<p>Deseja confirmar sua ida
 
 	<?php if($guest['Guest']['companions'] > 0) { ?>
-		e de mais <b><?php echo $guest['Guest']['companions']; ?></b> familiar(es) 
+		e de mais <b><?php echo $guest['Guest']['companions']; ?></b> familiar<?php echo $guest['Guest']['companions'] > 1 ? 'es' : null; ?> 
 	<?php } ?>
 
 	ao <b><?php echo $guest['Event']['name']; ?></b>
