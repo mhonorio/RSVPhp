@@ -27,7 +27,7 @@
 
 		ao <b><?php echo $guest['Event']['name']; ?></b>
 
-		na <b><?php echo $guest['Event']['location']; ?></b> no dia <b><?php echo $guest['Event']['dateF']; ?></b>
+		na <b><?php echo $guest['Event']['location']; ?></b> no dia <b><?php echo $guest['Event']['dateF']; ?>?</b>
 	</h3>
 	<br /><br />
 	
