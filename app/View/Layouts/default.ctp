@@ -47,6 +47,7 @@
 	</div>
 	<div id="footer">
 		<div class="tWidth">
+			Agradecimento especial ao meu amigo <a href="http://marcioseiji.com/blog/" target="_blank" style="text-decoration: underline;">Marcio Seiji</a> por ter ajudado no desenvolvimento desse site :-)
 		</div>
   </div>
 </div>
