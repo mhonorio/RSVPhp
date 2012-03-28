@@ -3,7 +3,7 @@
 <style type="text/css">
 	label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
 </style>
-<script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		$("#EventSearchForm").validate();
 	});
@@ -24,12 +24,14 @@ echo $this->Form->create('Event', array(
 
 echo $this->Form->input('first_name', array(
 	'label' => 'Primeiro nome',
-	'class' => 'required'
+	'class' => 'required',
+	'minlength' => 3
 ));
 
 echo $this->Form->input('last_name', array(
 	'label' => 'Último nome',
-	'class' => 'required'
+	'class' => 'required',
+	'minlength' => 3
 ));
 
 echo $this->Form->end('Próximo');
@@ -40,3 +42,7 @@ echo $this->Form->end('Próximo');
 <a href="http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=181763" target="_Blank"><img src="/img/ponto_frio.png" /></a>
 
 <a href="http://www.precolandia.com.br/giftlistview.aspx?idgiftlist=9EY290K729" target="_Blank"><img src="/img/precolandia.gif" /></a>
+
+<script type="text/javascript">
+  $("#EventFirstName").focus();
+</script>
