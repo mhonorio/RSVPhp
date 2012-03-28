@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
@@ -10,7 +10,7 @@
 
 		echo $scripts_for_layout;
 
-                ?>
+	?>
 
     <link href='http://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'></link>
 <script type="text/javascript">
@@ -35,20 +35,13 @@
 				<div class="left">
 					<h1><a href="/"><img alt="logotype" src="/img/logotype.png" /><?php echo $event['Event']['name']; ?></a></h1>
 				</div>
-				<!--<div class="menu">
-					<ul>
-						<li><a class="active" href="index.html">home</a></li>
-						<li><a href="index-1.html">about</a></li>
-						<li><a href="index-2.html">photo services</a></li>
-					</ul>
-				</div>-->
 				<div class="clear"></div>
 			</div>
 			<div id="content"><div class="indent">
 
 				<?php echo $this->Session->flash(); ?>
 
-                                <?php echo $content_for_layout; ?>
+				<?php echo $content_for_layout; ?>
 			</div></div>
 		</div>
 	</div>
