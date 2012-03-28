@@ -30,7 +30,7 @@ html, body { height:100%; width:100%;}
 .clear { clear:both; font-size:0; line-height:0; }
 
 #container_all { min-height:100%; width:100%; background:url(/img/site_bg.gif) repeat-x left top; text-align:center; color:#a6958b; font-size:11px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; }
-#content_box { background:url(/img/content_bg.jpg) no-repeat right bottom; min-height:474px; width:100%; }
+#content_box { background:url(/img/content_bg2.jpg) no-repeat right bottom; min-height:474px; width:100%; }
 #footer { background-color:#e1dcc7;  width:100%; }
 #footer .tWidth { text-align:center; padding:40px 0 20px 0; }
 #footer .tWidth a { text-decoration:none; }
