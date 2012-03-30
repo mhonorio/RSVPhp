@@ -14,6 +14,10 @@ if($event['Event']['days'] < 0) {
 ?>
 	<h2>O Casamento foi ANIMAL! Obrigado a todos que compareceram.</h2>
 <?php
+} else if ($event['Event']['days'] == 0) {
+?>
+	<h2>Hoje é o dia, se preparem para o melhor casamento das suas vidas!</h2>
+<?php
 } else {
 ?>
 	<h2>Faltam <?php echo $event['Event']['days']; ?> dias!</h2>
