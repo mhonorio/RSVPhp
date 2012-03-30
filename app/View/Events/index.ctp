@@ -9,7 +9,17 @@
 	});
  </script>
 
-<h2>Faltam <?php echo $event['Event']['days']; ?> dias!</h2>
+<?php
+if($event['Event']['days'] < 0) {
+?>
+	<h2>O Casamento foi ANIMAL! Obrigado a todos que compareceram.</h2>
+<?php
+} else {
+?>
+	<h2>Faltam <?php echo $event['Event']['days']; ?> dias!</h2>
+<?php
+}
+?>
 
 <br /><br />
 
@@ -44,5 +54,5 @@ echo $this->Form->end('Próximo');
 <a href="http://www.precolandia.com.br/giftlistview.aspx?idgiftlist=9EY290K729" target="_Blank"><img src="/img/precolandia.gif" /></a>
 
 <script type="text/javascript">
-  $("#EventFirstName").focus();
+	$("#EventFirstName").focus();
 </script>
