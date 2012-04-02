@@ -22,7 +22,7 @@
 	<td><?php echo $g['Guest']['last_name']; ?></td>
 	<td><?php echo $g['Guest']['companions']; ?></td>
 	<td><?php echo $g['Guest']['confirmed'] == 1 ? 'Sim' : 'Não'; ?></td>
-	<td><?php echo $g['Guest']['confirmed'] == 1 ? $g['Guest']['modified'] : '-'; ?></td>
+	<td><?php echo $g['Guest']['confirmed'] == 1 ? $g['Guest']['dateF'] : '-'; ?></td>
 </tr>
 <?php } ?>
 

@@ -6,6 +6,10 @@ class Guest extends AppModel
 	
 	public $belongsTo = array('Event');
 	
+	public $virtualFields = array(
+		'dateF' => "DATE_FORMAT(modified, '%d/%m/%Y às %H:%i')"
+	);
+	
 	/*public $validate = array(
 		'first_name' => array(
 			'alphaNumeric' => array(
