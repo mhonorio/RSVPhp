@@ -50,13 +50,14 @@ echo $this->Form->input('last_name', array(
 
 echo $this->Form->end('Próximo');
 ?>
+<!--
 <br /><br />
 <h2>Sugestões de presentes:</h2>
 <br />
 <a href="http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=181763" target="_Blank"><img src="/img/ponto_frio.png" /></a>
 
 <a href="http://www.precolandia.com.br/giftlistview.aspx?idgiftlist=9EY290K729" target="_Blank"><img src="/img/precolandia.gif" /></a>
-
+-->
 <script type="text/javascript">
 	$("#EventFirstName").focus();
 </script>
